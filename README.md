@@ -101,11 +101,9 @@ After enabling each service, click **Back to Main Menu** in the top left.
 1. Clone this repository.
 
    ```bash title="Create project folder"
-   git@github.com:pangeacyber/langchain-python-inference-guardrails.git
+   git clone https://github.com/pangeacyber/langchain-python-inference-guardrails.git
    cd langchain-python-inference-guardrails
    ```
-
-   After creating the folder, open it in your IDE.
 
 1. Create and activate a Python virtual environment in your project folder. For example:
 
@@ -128,12 +126,14 @@ After enabling each service, click **Back to Main Menu** in the top left.
 
 1. Save the Pangea domain and service tokens, along with the OpenAI key, as environment variables.
 
-   Create a `.env` file and populate it with your OpenAI and Pangea credentials. Use [.env.example](.env.example) as a template.
+   Create a `.env` file and populate it with your OpenAI and Pangea credentials. Use the [.env.example](.env.example) file included in this repository as a template.
 
-   > Instead of storing secrets locally and potentially exposing them to the environment, you can securely store your credentials in [Vault](https://pangea.cloud/services/vault/) and retrieve them dynamically at runtime. Enable Vault the same way you enabled other services by selecting it in the left-hand sidebar of the Pangea User Console. The [Manage Secrets](/docs/vault/manage-secrets/secret-overview) documentation provides guidance on storing and using secrets in Vault.
+   > Instead of storing secrets locally and potentially exposing them to the environment, you can securely store your credentials in [Vault](https://pangea.cloud/services/vault/), optionally enable rotation, and retrieve them dynamically at runtime. Enable Vault the same way you enabled other services by selecting it in the left-hand sidebar of the Pangea User Console. The [Manage Secrets](/docs/vault/manage-secrets/secret-overview) documentation provides guidance on storing and using secrets in Vault.
    >
-   > For example, you can store your OpenAI key in Vault and retrieve it using the [Vault APIs](/docs/api/vault/v1-general#/v1/get). When you enable a Pangea service, its default token can be stored in Vault automatically.
+   > For example, you can store your OpenAI key in Vault and retrieve it using the [Vault APIs](/docs/api/vault/v1-general#/v1/get). When you enable a new Pangea service, its default token is stored in Vault automatically.
 
 1. Open the provided Jupyter notebook, [langchain-python-inference-guardrails.ipynb](langchain-python-inference-guardrails.ipynb), and run the code examples in your Python environment.
 
-    [Jupyter notebooks](https://jupyter.org/) provide a popular way to execute Python code interactively. You can [install Jupyter](https://jupyter.org/install) in your system or use a plugin for your IDE.
+   [Jupyter notebooks](https://jupyter.org/) provide a popular way to execute Python code interactively. You can [install Jupyter](https://jupyter.org/install) on your system or use an IDE extension.
+
+   > Be sure to select the kernel in your local `.venv` environment if it is not automatically set by your IDE.
