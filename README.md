@@ -1,5 +1,7 @@
 # LLM Prompt & Response Guardrails in Python with LangChain and Pangea
 
+> This tutorial is also available on the [Pangea Documentation](https://pangea.cloud/docs/ai-security/langchain-python-inference-guardrails) website, where you can learn more about Pangea's services.
+
 This tutorial demonstrates how to quickly add Pangea Services to any LangChain application to address concerns outlined in [OWASP LLM06: Sensitive Information Disclosure](https://genai.owasp.org/llmrisk/llm06-sensitive-information-disclosure/), help prevent [OWASP LLM02: Insecure Output Handling](https://genai.owasp.org/llmrisk/llm02-insecure-output-handling/), mitigate vulnerabilities described in [OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/), and reduce the effects of [OWASP LLM03: Training Data Poisoning](https://genai.owasp.org/llmrisk/llm03-training-data-poisoning/).
 
 LangChain and Pangea offer flexible, composable APIs for building, securing, and launching generative AI applications. This tutorial focuses on securing input prompts submitted to an LLM and the responses from the LLM during user interactions with the application, helping you achieve the following objectives:
